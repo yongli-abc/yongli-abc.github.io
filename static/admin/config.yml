@@ -1,6 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: yongli-abc/yongli-abc.github.io
   branch: master # Branch to update (optional; defaults to master)
+  api_root: https://api.github.com
+  site_domain: yongliabc.dev
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads

@@ -3,7 +3,7 @@ backend:
   repo: yongli-abc/yongli-abc.github.io
   branch: master # Branch to update (optional; defaults to master)
   api_root: https://api.github.com
-  site_domain: yongliabc.dev
+  site_domain: ff4d9fac-9df2-402f-951d-43ea560d9115
   base_url: https://api.netlify.com
   auth_endpoint: auth
 

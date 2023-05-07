@@ -3,6 +3,8 @@ title: "LeetCode 1964: Find the Longest Valid Obstacle Course at Each Position"
 date: 2023-05-07
 draft: false
 tags: ["LeetCode", "Python", "Dynamic Programming", "Binary Search", "Longest Increasing Subsequence"]
+categories:
+  - LeetCode
 ---
 
 In this blog post, we'll discuss how to solve LeetCode problem 1964: Find the Longest Valid Obstacle Course at Each Position. The problem statement is as follows:

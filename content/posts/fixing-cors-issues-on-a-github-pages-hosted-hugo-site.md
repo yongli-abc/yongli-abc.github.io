@@ -7,6 +7,10 @@ tags:
   - Hugo
   - CORS
   - Web Development
+categories:
+  - Web Development
+  - Blogging
+  - Hugo
 ---
 
 Recently, I encountered a CORS issue with my personal blog site hosted on GitHub Pages with Hugo. After purchasing a custom domain from GoDaddy and setting up an SSL certificate, my site only displayed the HTML content, and all the CSS styling was missing.

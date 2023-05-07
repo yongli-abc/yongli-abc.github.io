@@ -7,6 +7,10 @@ tags:
   - Themes
   - Troubleshooting
   - Static Site Generator
+categories:
+  - Web Development
+  - Blogging
+  - Hugo
 ---
 
 Have you ever encountered an issue with Hugo themes where an image (such as an avatar) isn't being displayed correctly, even though the path appears to be correct in the `config.toml` file? In this blog post, we'll dive into the problem and provide a solution to ensure your images are displayed correctly.

@@ -1,6 +1,6 @@
 <article class="flex flex-col gap-1">
     <h1 class="text-xl font-bold hover:underline"> <a href=" {{ .Permalink }} ">{{ .Title }}</a></h1>
-    <span class="post-date text-sm font-semibold text-gray-600">{{ .Date.Format "2006, January 2" }}</span>
+    <span class="post-date text-sm font-semibold text-gray-600">{{ .Date.Format "2006, January 2" }} - Read time: {{ math.Round (div (countwords .Content) 200) }} minutes</span>
     <div class="text-gray-600">
     {{ if .Params.description }}
     {{ .Params.description }}    

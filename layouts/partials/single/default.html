@@ -3,6 +3,7 @@
         {{ partial "single/components/title/large" . }}
         <div class="text-sm font-semibold text-gray-500 flex gap-3">
         {{ partial "single/components/metatag/time" . }}
+        <p>Read time: {{ math.Round (div (countwords .Content) 200) }} minutes</p>
         {{ partial "single/components/metatag/categories" . }}
         </div>
     </header>

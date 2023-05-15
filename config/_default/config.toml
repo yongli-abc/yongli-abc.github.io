@@ -10,13 +10,17 @@ summaryLength= 15
 paginate = 5
 
 [markup.highlight]
-      codeFences = false
+      codeFences = true
       guessSyntax = false
       hl_Lines = ""
       lineNoStart = 1
       lineNos = false
       lineNumbersInTable = false
       tabWidth = 4
-      noClasses = false
+      noClasses = true
 
 outputFormats.Sitemap = "sitemap.xml"
+
+pygmentsCodefences = true
+pygmentsUseClasses=true
+PygmentsStyle = "vs"

@@ -2,7 +2,7 @@ baseURL = 'https://yongli-abc.github.io/'
 copyright = "{year}" # To make 2007 - 2022. Just add before {year} example: 2007 - {year}
 languageCode = 'en-uk'
 theme = 'lowkey'
-title = 'Yong Li'
+title = 'Yong Li 李泳'
 enableRobotsTXT = true
 
 # List Config

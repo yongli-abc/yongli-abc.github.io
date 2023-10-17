@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Controllers on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/controllers/</link>
+    <description>Recent content in Controllers on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/controllers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Kubernetes Watch Mechanism, HTTP Long Polling, and Chunked Transfer Encoding</title>
+      <link>https://yongli-abc.github.io/posts/understanding_kubernetes_watch_mechanism_http_long_polling_and_chunked_transfer_encoding/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/understanding_kubernetes_watch_mechanism_http_long_polling_and_chunked_transfer_encoding/</guid>
+      <description>Kubernetes (K8s) is an open-source platform for managing containerized workloads and services. One of the core concepts of Kubernetes is the &amp;ldquo;watch&amp;rdquo; mechanism used by its controllers.</description>
+    </item>
+    
+  </channel>
+</rss>

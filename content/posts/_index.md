@@ -1,5 +1,7 @@
 ---
 title: "Post"
-header: "Latest Posts" # Optional
+header: "Latest Posts 近文" # Optional
 ---
-See What I’ve Written Lately
+Wisdom arises where text ends. Means form where volition cultivates. 
+
+离纸相滅，落笔境生。言语道断，心行自在。

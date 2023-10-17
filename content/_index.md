@@ -1,10 +1,7 @@
 ---
-title: "Hi There!"
+title: "Welcome and take your time. 欢迎，请便。"
 draft: false
 ---
-Hello, I'm Yong Li, a Software Engineer with a passion for platform engineering, reliability engineering and cloud. 
+静水流深，奔泉泽广。
 
-I'm currently based in London, UK.
-
-
-Feel free to get in touch with me via LinkedIn or GitHub, or reach out directly at yongliabc888@gmail.com.
+See more, do more.

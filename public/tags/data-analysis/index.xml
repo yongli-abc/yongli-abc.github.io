@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analysis on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/data-analysis/</link>
+    <description>Recent content in Data Analysis on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Importance of Effect Size in A/B Testing</title>
+      <link>https://yongli-abc.github.io/posts/the-importance-of-effect-size-in-ab-testing/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/the-importance-of-effect-size-in-ab-testing/</guid>
+      <description>In the world of data analysis and A/B testing, understanding the concept of effect size is critical.</description>
+    </item>
+    
+  </channel>
+</rss>

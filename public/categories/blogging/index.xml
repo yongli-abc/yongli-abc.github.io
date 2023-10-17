@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/categories/blogging/</link>
+    <description>Recent content in Blogging on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding a Read Time Estimation to Your Hugo Blog Posts</title>
+      <link>https://yongli-abc.github.io/posts/adding-a-read-time-estimation-to-your-hugo-blog-posts/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/adding-a-read-time-estimation-to-your-hugo-blog-posts/</guid>
+      <description>In this blog post, we&amp;rsquo;re going to learn how to add a read time estimation to your Hugo blog posts.</description>
+    </item>
+    
+    <item>
+      <title>Fixing CORS Issues on a GitHub Pages-hosted Hugo Site</title>
+      <link>https://yongli-abc.github.io/posts/fixing-cors-issues-on-a-github-pages-hosted-hugo-site/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/fixing-cors-issues-on-a-github-pages-hosted-hugo-site/</guid>
+      <description>Recently, I encountered a CORS issue with my personal blog site hosted on GitHub Pages with Hugo.</description>
+    </item>
+    
+    <item>
+      <title>How to Add Utterances Comments Widget to Your Hugo Blog</title>
+      <link>https://yongli-abc.github.io/posts/how-to-add-utterances-comments-widget-to-your-hugo-blog/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/how-to-add-utterances-comments-widget-to-your-hugo-blog/</guid>
+      <description>In this blog post, we&amp;rsquo;ll walk through the steps to add the Utterances comments widget to your Hugo-based GitHub Pages site.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Avatar Image Path Issue in Hugo Themes</title>
+      <link>https://yongli-abc.github.io/posts/fixing-avatar-image-path-issue-in-hugo-themes/</link>
+      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/fixing-avatar-image-path-issue-in-hugo-themes/</guid>
+      <description>Have you ever encountered an issue with Hugo themes where an image (such as an avatar) isn&amp;rsquo;t being displayed correctly, even though the path appears to be correct in the config.</description>
+    </item>
+    
+  </channel>
+</rss>

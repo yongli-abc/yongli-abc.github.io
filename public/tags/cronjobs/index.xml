@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CronJobs on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/cronjobs/</link>
+    <description>Recent content in CronJobs on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/cronjobs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: Understanding Jobs and CronJobs</title>
+      <link>https://yongli-abc.github.io/posts/kubernetes-understanding-jobs-and-cronjobs/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/kubernetes-understanding-jobs-and-cronjobs/</guid>
+      <description>In Kubernetes, we often have pods that are meant to run indefinitely. However, there are scenarios where we need to run a specific task and exit, like a database migration.</description>
+    </item>
+    
+  </channel>
+</rss>

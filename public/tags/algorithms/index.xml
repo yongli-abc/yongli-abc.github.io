@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/algorithms/</link>
+    <description>Recent content in Algorithms on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Fri, 12 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 2140: Solving Questions With Brainpower</title>
+      <link>https://yongli-abc.github.io/posts/leetcode_2140_solving_questions_with_brainpower/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/leetcode_2140_solving_questions_with_brainpower/</guid>
+      <description>In this post, we will solve LeetCode problem 2140, titled &amp;ldquo;Solving Questions With Brainpower&amp;rdquo;. This problem is a great example of applying dynamic programming to a practical scenario.</description>
+    </item>
+    
+  </channel>
+</rss>

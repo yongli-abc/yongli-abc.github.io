@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-uk" class="scroll-smooth">
+    <head><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding Kubernetes Watch Mechanism, HTTP Long Polling, and Chunked Transfer Encoding</title>
+<meta name="description" content="Kubernetes (K8s) is an open-source platform for managing containerized workloads and services. One of the core concepts of Kubernetes is the &ldquo;watch&rdquo; mechanism used by its controllers.">
+<link rel="canonical" href="https://yongli-abc.github.io/posts/understanding_kubernetes_watch_mechanism_http_long_polling_and_chunked_transfer_encoding/">
+<link rel="robots" href="/robots.txt" />
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="https://yongli-abc.github.io/css/main.min.7c193f76945eca97cae471557ae10eb65711741c276b70d3b68d1837a6c767c1.css" integrity="sha256-fBk/dpReypfK5HFVeuEOtlcRdBwna3DTto0YN6bHZ8E=">
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=646d3eb240353a0019caeefb&product=inline-share-buttons' async='async'></script>
+<link rel="icon" type="image/png" href="/favicon.png">
+</head>
+    <body class="max-w-screen-md px-10 mx-auto"><header class="flex flex-col sm:flex-row items-center gap-5 sm:gap-10 pt-16 py-12">
+    
+
+<figure class="flex-none w-20 h-20 rounded-full overflow-hidden" ><a href="https://yongli-abc.github.io/"><img srcset="/img/profile-picture_huff29aa5b3425babacd2b164f05d3cb9e_53129_80x80_fill_q90_box_smart1_3.png 80w" src="/img/profile-picture.png" width="512" height="512" alt="Yong Li 李泳"></a></figure>
+
+    <div class="flex flex-col gap-5">
+    <a href="https://yongli-abc.github.io/">
+    
+    <h3 class="text-center sm:text-left text-4xl font-extrabold text-gray-800 ">Yong Li 李泳</h3>
+    
+</a>
+    <nav>
+    <ul class="flex flex-wrap justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
+        
+        
+        <li class="hover:text-gray-500"><a href="/">Home 主页</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/posts">Posts 文章</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/categories">Categories 分类</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/tags">Tags 标签</a></li>
+        
+        <li class="hover:text-gray-500"><a href="https://ko-fi.com/yongliabc">Donate 随喜</a></li>
+        
+    </ul>
+</nav>
+    </div>
+</header><div id="content">
+<article class="flex flex-col gap-10">
+    <header class="flex flex-col gap-2">
+        <h2 class="text-4xl leading-snug font-bold text-gray-900">Understanding Kubernetes Watch Mechanism, HTTP Long Polling, and Chunked Transfer Encoding</h2>
+
+        <div class="text-sm font-semibold text-gray-500 flex gap-3">
+        
+<time datetime="2023-05-22 00:00:00 &#43;0000 UTC" title="2023-05-22 00:00:00 &#43;0000 UTC">
+    22 May 2023
+</time>
+        <p>Read time: 2 minutes</p>
+        
+        —
+        
+            <a class="hover:text-gray-500" href="/categories/kubernetes/" alt="Kubernetes" >
+                Kubernetes
+                </a>
+        
+            <a class="hover:text-gray-500" href="/categories/networking/" alt="Networking" >
+                Networking
+                </a>
+        
+
+        </div>
+    </header>
+    <section class="content text-lg text-gray-800">
+    <p>Kubernetes (K8s) is an open-source platform for managing containerized workloads and services. One of the core concepts of Kubernetes is the &ldquo;watch&rdquo; mechanism used by its controllers. In this post, we&rsquo;ll delve into how this mechanism works, along with a discussion of HTTP long polling and chunked transfer encoding.</p>
+<h2 id="kubernetes-watch-mechanism">Kubernetes Watch Mechanism</h2>
+<p>In Kubernetes, a controller watches for changes to resources using a pattern called &ldquo;level-based&rdquo; rather than &ldquo;edge-based&rdquo;. This means that the controller doesn&rsquo;t rely on being directly informed about each change by the API Server. Instead, it constantly watches the state of the system and reacts to the current state, as opposed to specific events.</p>
+<p>The controller achieves this using the &ldquo;watch&rdquo; API in Kubernetes. This involves the controller establishing a long-lived connection with the API server and receiving updates as they happen. When a resource (like a Deployment or a ReplicaSet) is created, updated, or deleted, the API server sends an update to the relevant controller over the watch stream. The controller, upon receiving an update, compares the actual state of the system with the desired state. If there&rsquo;s a discrepancy, it takes action to reconcile the two.</p>
+<p>This watch mechanism is used by all Kubernetes controllers, following a common pattern often referred to as the &ldquo;controller pattern&rdquo; or the &ldquo;reconciler pattern&rdquo;.</p>
+<h2 id="http-long-polling-and-chunked-transfer-encoding">HTTP Long Polling and Chunked Transfer Encoding</h2>
+<p>The watch functionality in Kubernetes is implemented using HTTP long polling, in conjunction with HTTP chunked transfer encoding. When a client initiates a watch request, it&rsquo;s essentially an HTTP GET request to the Kubernetes API server with a <code>watch=true</code> parameter in the query string.</p>
+<p>The server processes the request and keeps the connection open, sending updates to the client whenever the state of the watched resources changes. These updates are sent as chunks of data over the same HTTP response. This is possible because of the chunked transfer encoding feature of HTTP/1.1, which allows the server to send the response in chunks as data becomes available, rather than having to send it all at once. This mechanism is efficient and well-suited to situations like this where the server needs to keep the client updated about changes as they happen.</p>
+<h2 id="tcp-connections">TCP Connections</h2>
+<p>HTTP, whether it&rsquo;s traditional short-lived HTTP or long-polling HTTP, is a protocol that is layered on top of TCP/IP. When a client, such as a Kubernetes controller, opens a TCP connection to the API server and sends an HTTP GET request over this connection, the server accepts the TCP connection and processes the HTTP request. It keeps the connection open and uses it to send updates to the client whenever there&rsquo;s a change to the watched resources.</p>
+<p>It&rsquo;s worth noting that in a real-world Kubernetes deployment, these connections would typically be secured using TLS (Transport Layer Security), which provides encryption and authentication on top of the underlying TCP connection.</p>
+<p>In summary, Kubernetes leverages the power of HTTP long polling and chunked transfer encoding to implement an efficient and robust system for watching changes in resources, enabling it to maintain the desired state of the system.</p>
+
+    </section>
+    <footer>
+        
+        <div class="pb-14 inline-flex gap-2 text-gray-600 text-sm font-medium">
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/kubernetes/" alt="Kubernetes" >
+                        Kubernetes
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/api-server/" alt="API Server" >
+                        API Server
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/http-long-polling/" alt="HTTP Long Polling" >
+                        HTTP Long Polling
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/tcp/" alt="TCP" >
+                        TCP
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/controllers/" alt="Controllers" >
+                        Controllers
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/chunked-transfer-encoding/" alt="Chunked Transfer Encoding" >
+                        Chunked Transfer Encoding
+                    </a>
+            
+        </div>
+
+    </footer>
+</article>
+<div class="sharethis-inline-share-buttons"></div>
+<script src="https://utteranc.es/client.js"
+        repo="yongli-abc/yongli-abc.github.io"
+        issue-term="pathname"
+        label="utteranc.es"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+
+        </div><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">
+    <div class="text-xs font-semibold text-gray-500 order-2 sm:order-1 ">
+    © 2023 — <a class="hover:text-gray-500" href="https://yongli-abc.github.io/">Yong Li 李泳</a> <span class=" font-normal ">with</span> <a class="hover:text-gray-500" href="https://github.com/nixentric/Lowkey-Hugo-Theme" target="_blank" rel="noopener noreferrer">Lowkey</a>
+</div>
+    <div class="text-xs font-semibold text-gray-500 order-1 sm:order-2">
+    <ul class="flex sm:justify-end gap-5">
+    <li><a class="hover:text-gray-500" href="https://www.linkedin.com/in/yongliabc/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a class="hover:text-gray-500" href="https://twitter.com/yongliabc" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a class="hover:text-gray-500" href="https://github.com/yongli-abc" target="_blank" rel="noopener noreferrer">GitHub</a></li><li><a class="hover:text-gray-500" href="mailto:yongliabc888@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+    </ul>
+</div>
+</footer></body>
+</html>

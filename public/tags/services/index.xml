@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/services/</link>
+    <description>Recent content in Services on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: Understanding Services and Ingress</title>
+      <link>https://yongli-abc.github.io/posts/kubernetes-understanding-services-and-ingress/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/kubernetes-understanding-services-and-ingress/</guid>
+      <description>Introduction to Kubernetes Services In Kubernetes, Pods are ephemeral and can be terminated and created dynamically.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problem Solving on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/problem-solving/</link>
+    <description>Recent content in Problem Solving on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 2466: Count Ways To Build Good Strings</title>
+      <link>https://yongli-abc.github.io/posts/leetcode_2466_count_ways_to_build_good_strings/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/leetcode_2466_count_ways_to_build_good_strings/</guid>
+      <description>Introduction In this post, I am going to share my solution for the LeetCode problem 2466: Count Ways to Build Good Strings.</description>
+    </item>
+    
+  </channel>
+</rss>

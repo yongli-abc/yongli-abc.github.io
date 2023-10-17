@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/categories/algorithm/</link>
+    <description>Recent content in Algorithm on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving LeetCode Problem 2090 - K Radius Subarray Averages</title>
+      <link>https://yongli-abc.github.io/posts/solving_leetcode_problem_2090_k_radius_subarray_averages/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/solving_leetcode_problem_2090_k_radius_subarray_averages/</guid>
+      <description>In this post, we will solve problem 2090 from LeetCode titled &amp;ldquo;K Radius Subarray Averages&amp;rdquo;. This problem provides an interesting use case of prefix sum arrays in handling subarray sum related problems.</description>
+    </item>
+    
+  </channel>
+</rss>

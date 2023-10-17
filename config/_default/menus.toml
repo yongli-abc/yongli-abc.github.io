@@ -1,30 +1,30 @@
 [[main]]
     identifier = "home"
-    name = "Home"
+    name = "Home 主页"
     url = "/"
     weight = 1
 
 [[main]]
     identifier = "posts"
-    name = "Posts"
+    name = "Posts 文章"
     url = "/posts"
     weight = 2
 
 [[main]]
     identifier = "categories"
-    name = "Categories"
+    name = "Categories 分类"
     url = "/categories"
     weight = 3
 
 [[main]]
     identifier = "tags"
-    name = "Tags"
+    name = "Tags 标签"
     url = "/tags"
     weight = 4
 
 [[main]]
     identifier = "donate"
-    name = "Donate"
+    name = "Donate 随喜"
     url = "https://ko-fi.com/yongliabc"
     weight = 5
 
@@ -48,3 +48,9 @@
     name = "GitHub"
     url = "https://github.com/yongli-abc"
     weight = 3
+
+[[social]]
+    identifier = "email"
+    name = "Email"
+    url = "mailto:yongliabc888@gmail.com"
+    weight = 4

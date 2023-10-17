@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-uk" class="scroll-smooth">
+    <head><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kubernetes: Understanding Services and Ingress</title>
+<meta name="description" content="Introduction to Kubernetes Services In Kubernetes, Pods are ephemeral and can be terminated and created dynamically.">
+<link rel="canonical" href="https://yongli-abc.github.io/posts/kubernetes-understanding-services-and-ingress/">
+<link rel="robots" href="/robots.txt" />
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="https://yongli-abc.github.io/css/main.min.7c193f76945eca97cae471557ae10eb65711741c276b70d3b68d1837a6c767c1.css" integrity="sha256-fBk/dpReypfK5HFVeuEOtlcRdBwna3DTto0YN6bHZ8E=">
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=646d3eb240353a0019caeefb&product=inline-share-buttons' async='async'></script>
+<link rel="icon" type="image/png" href="/favicon.png">
+</head>
+    <body class="max-w-screen-md px-10 mx-auto"><header class="flex flex-col sm:flex-row items-center gap-5 sm:gap-10 pt-16 py-12">
+    
+
+<figure class="flex-none w-20 h-20 rounded-full overflow-hidden" ><a href="https://yongli-abc.github.io/"><img srcset="/img/profile-picture_huff29aa5b3425babacd2b164f05d3cb9e_53129_80x80_fill_q90_box_smart1_3.png 80w" src="/img/profile-picture.png" width="512" height="512" alt="Yong Li 李泳"></a></figure>
+
+    <div class="flex flex-col gap-5">
+    <a href="https://yongli-abc.github.io/">
+    
+    <h3 class="text-center sm:text-left text-4xl font-extrabold text-gray-800 ">Yong Li 李泳</h3>
+    
+</a>
+    <nav>
+    <ul class="flex flex-wrap justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
+        
+        
+        <li class="hover:text-gray-500"><a href="/">Home 主页</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/posts">Posts 文章</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/categories">Categories 分类</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/tags">Tags 标签</a></li>
+        
+        <li class="hover:text-gray-500"><a href="https://ko-fi.com/yongliabc">Donate 随喜</a></li>
+        
+    </ul>
+</nav>
+    </div>
+</header><div id="content">
+<article class="flex flex-col gap-10">
+    <header class="flex flex-col gap-2">
+        <h2 class="text-4xl leading-snug font-bold text-gray-900">Kubernetes: Understanding Services and Ingress</h2>
+
+        <div class="text-sm font-semibold text-gray-500 flex gap-3">
+        
+<time datetime="2023-05-08 00:00:00 &#43;0000 UTC" title="2023-05-08 00:00:00 &#43;0000 UTC">
+    8 May 2023
+</time>
+        <p>Read time: 1 minutes</p>
+        
+        —
+        
+            <a class="hover:text-gray-500" href="/categories/kubernetes/" alt="Kubernetes" >
+                Kubernetes
+                </a>
+        
+
+        </div>
+    </header>
+    <section class="content text-lg text-gray-800">
+    <h2 id="introduction-to-kubernetes-services">Introduction to Kubernetes Services</h2>
+<p>In Kubernetes, Pods are ephemeral and can be terminated and created dynamically. To provide a stable network endpoint for Pods, we use a Kubernetes resource called a Service. Services enable communication between applications within the cluster and expose them to external users.</p>
+<h3 id="clusterip">ClusterIP</h3>
+<p>The simplest and default type of Service is ClusterIP. It allows communication between Pods running inside the cluster. For instance, if application <em>app-a</em> has three replicas and <em>app-b</em> requires a stable endpoint to access these replicas, we can create a ClusterIP Service for <em>app-a</em>.</p>
+<h3 id="nodeport">NodePort</h3>
+<p>NodePort is another type of Service that builds on top of ClusterIP. It opens a port on all worker nodes in the cluster and redirects incoming requests to the appropriate Pods, even if they are running on different nodes. NodePort Services are useful for exposing applications to the outside world.</p>
+<h3 id="loadbalancer">LoadBalancer</h3>
+<p>LoadBalancer is an extension of NodePort and ClusterIP Services. It provisions a Load Balancer on the cloud provider running the Kubernetes cluster. For example, if the cluster is on AWS, creating a LoadBalancer Service automatically creates an Elastic Load Balancer (ELB). This Service type is suitable for easily exposing applications to external traffic.</p>
+<h3 id="externalname">ExternalName</h3>
+<p>Unlike other Service types, ExternalName provides a stable endpoint for an external service. For example, if you have a database running at <em>my-db.company.com</em>, you can create an ExternalName Service that points to this external address.</p>
+<h2 id="introduction-to-ingress">Introduction to Ingress</h2>
+<p>Ingress is a Kubernetes resource that routes HTTP traffic to Services based on defined rules. It is not a Service type but acts as a smart router. An Ingress can manage traffic for multiple Services, while a LoadBalancer creates a separate load balancer for each Service.</p>
+<p>Using Ingress has several advantages:</p>
+<ul>
+<li>Ingress allows you to route traffic to different Services with a single load balancer, reducing costs.</li>
+<li>Ingress can route requests to different paths, such as <em>example.com/foo</em> to the <em>foo</em> Service and <em>example.com/bar</em> to the <em>bar</em> Service.</li>
+</ul>
+<p>In summary, a LoadBalancer is an easy way to expose Services, while an Ingress is more powerful and flexible.</p>
+<h2 id="recap">Recap</h2>
+<ul>
+<li>Services provide a stable endpoint for Pods in Kubernetes, enabling communication within the cluster and exposure to external users.</li>
+<li>There are four types of Services: ClusterIP, NodePort, LoadBalancer, and ExternalName.</li>
+<li>Ingress is a Kubernetes resource that routes HTTP traffic to Services based on defined rules. It offers more flexibility than using LoadBalancer Services for traffic management.</li>
+</ul>
+
+    </section>
+    <footer>
+        
+        <div class="pb-14 inline-flex gap-2 text-gray-600 text-sm font-medium">
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/kubernetes/" alt="Kubernetes" >
+                        Kubernetes
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/services/" alt="Services" >
+                        Services
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/ingress/" alt="Ingress" >
+                        Ingress
+                    </a>
+            
+        </div>
+
+    </footer>
+</article>
+<div class="sharethis-inline-share-buttons"></div>
+<script src="https://utteranc.es/client.js"
+        repo="yongli-abc/yongli-abc.github.io"
+        issue-term="pathname"
+        label="utteranc.es"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+
+        </div><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">
+    <div class="text-xs font-semibold text-gray-500 order-2 sm:order-1 ">
+    © 2023 — <a class="hover:text-gray-500" href="https://yongli-abc.github.io/">Yong Li 李泳</a> <span class=" font-normal ">with</span> <a class="hover:text-gray-500" href="https://github.com/nixentric/Lowkey-Hugo-Theme" target="_blank" rel="noopener noreferrer">Lowkey</a>
+</div>
+    <div class="text-xs font-semibold text-gray-500 order-1 sm:order-2">
+    <ul class="flex sm:justify-end gap-5">
+    <li><a class="hover:text-gray-500" href="https://www.linkedin.com/in/yongliabc/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a class="hover:text-gray-500" href="https://twitter.com/yongliabc" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a class="hover:text-gray-500" href="https://github.com/yongli-abc" target="_blank" rel="noopener noreferrer">GitHub</a></li><li><a class="hover:text-gray-500" href="mailto:yongliabc888@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+    </ul>
+</div>
+</footer></body>
+</html>

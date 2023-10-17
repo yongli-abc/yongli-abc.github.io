@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/categories/docker/</link>
+    <description>Recent content in Docker on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving the &#39;exec /bin/sh: exec format error&#39; with Multi-Architecture Docker Builds</title>
+      <link>https://yongli-abc.github.io/posts/solving_the_exec_binsh_exec_format_error_with_multi_architecture_docker_builds/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/solving_the_exec_binsh_exec_format_error_with_multi_architecture_docker_builds/</guid>
+      <description>Introduction In the world of containers and microservices, Docker is a popular tool for packaging applications along with their dependencies.</description>
+    </item>
+    
+  </channel>
+</rss>

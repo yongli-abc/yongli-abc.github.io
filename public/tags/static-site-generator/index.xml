@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static Site Generator on Yong Li 李泳</title>
+    <link>https://yongli-abc.github.io/tags/static-site-generator/</link>
+    <description>Recent content in Static Site Generator on Yong Li 李泳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Sat, 06 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yongli-abc.github.io/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Avatar Image Path Issue in Hugo Themes</title>
+      <link>https://yongli-abc.github.io/posts/fixing-avatar-image-path-issue-in-hugo-themes/</link>
+      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yongli-abc.github.io/posts/fixing-avatar-image-path-issue-in-hugo-themes/</guid>
+      <description>Have you ever encountered an issue with Hugo themes where an image (such as an avatar) isn&amp;rsquo;t being displayed correctly, even though the path appears to be correct in the config.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,7 +9,7 @@ tags:
 - mindfulness
 - satipatthana
 ---
-小诗一首，英文词句来源于 Anālayo《四念住》。
+小诗一首，英文词句来源于 Anālayo《四念住》，有微小改动。
 
 > 《念觉》
 > 
@@ -21,7 +21,7 @@ tags:
 > 
 > 乐定衡舍。
 
-A tiny poem formed by words from Anālayo's "Satipatthana".
+A tiny poem formed by words from Anālayo's "Satipatthana" with slight modification.
 
 > "Mindfully Awakening"
 > 
@@ -31,4 +31,4 @@ A tiny poem formed by words from Anālayo's "Satipatthana".
 > 
 > Joyfully sustained interest.
 > 
-> Calmly composed balance.
+> Serenely composed balance.

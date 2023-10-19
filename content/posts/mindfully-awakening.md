@@ -32,3 +32,5 @@ A tiny poem formed by words from Anālayo's "Satipatthana" with slight modificat
 > Joyfully sustained interest.
 > 
 > Serenely composed balance.
+
+{{< figure src="/images/bodjjhangas-scales-sans-sanskrit-web.jpg" width="400px" alt="Balance of Seven Awakening Factors" >}}

@@ -1,7 +1,7 @@
 ---
 title: "LeetCode 1964: Find the Longest Valid Obstacle Course at Each Position"
 date: 2023-05-07
-draft: false
+draft: true
 tags: ["LeetCode", "Python", "Dynamic Programming", "Binary Search", "Longest Increasing Subsequence"]
 categories:
   - programming

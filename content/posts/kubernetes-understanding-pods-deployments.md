@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes: Understanding Pods, Deployments, and Probes"
 date: 2023-05-08
-draft: false
+draft: true
 tags: ["Kubernetes", "Pods", "Deployments", "Probes"]
 categories: ["Kubernetes", "Containers", "Orchestration"]
 ---

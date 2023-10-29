@@ -3,7 +3,7 @@ title: "Kubernetes: Understanding Jobs and CronJobs"
 date: 2023-05-10
 tags: ["Kubernetes", "Jobs", "CronJobs", "Orchestration"]
 categories: ["Kubernetes", "Containers", "Orchestration"]
-draft: false
+draft: true
 ---
 
 In Kubernetes, we often have pods that are meant to run indefinitely. However, there are scenarios where we need to run a specific task and exit, like a database migration. For these use cases, we use a Kubernetes resource called Job.

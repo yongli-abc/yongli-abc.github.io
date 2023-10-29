@@ -3,6 +3,7 @@ title: "Solving LeetCode Problem 2090 - K Radius Subarray Averages"
 date: 2023-06-20
 categories: ["LeetCode", "Python", "Algorithm"]
 tags: ["prefix sum", "arrays"]
+draft: true
 ---
 
 In this post, we will solve problem 2090 from LeetCode titled "K Radius Subarray Averages". This problem provides an interesting use case of prefix sum arrays in handling subarray sum related problems.

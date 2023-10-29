@@ -1,7 +1,7 @@
 ---
 title: "LeetCode 2140: Solving Questions With Brainpower"
 date: 2023-05-12
-draft: false
+draft: true
 tags: ["Algorithms", "Dynamic Programming", "LeetCode"]
 categories: ["Programming", "Python", "LeetCode"]
 ---

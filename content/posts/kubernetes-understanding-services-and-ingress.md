@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes: Understanding Services and Ingress"
 date: 2023-05-08
-draft: false
+draft: true
 tags: ["Kubernetes", "Services", "Ingress"]
 categories: ["Kubernetes"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Understanding Kubernetes Watch Mechanism, HTTP Long Polling, and Chunked Transfer Encoding"
 date: 2023-05-22
-draft: false
+draft: true
 categories: ["Kubernetes", "Networking"]
 tags: ["Kubernetes", "API Server", "HTTP Long Polling", "TCP", "Controllers", "Chunked Transfer Encoding"]
 ---

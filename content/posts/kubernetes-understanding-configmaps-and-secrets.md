@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes: Understanding ConfigMaps and Secrets"
 date: 2023-05-09
-draft: false
+draft: true
 tags: ["Kubernetes", "ConfigMaps", "Secrets", "Orchestration"]
 categories: ["Kubernetes", "Containers", "Orchestration"]
 ---

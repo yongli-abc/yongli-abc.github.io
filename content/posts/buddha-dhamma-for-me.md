@@ -9,7 +9,7 @@ tags:
 - 
 ---
 
-> 该文档作为我加入谷歌佛教小组（内部员工自发组织的佛教文化社团）委员会的个人声明，阐述了我在佛法方面的经历、方法、观点、修行和愿景。中文在前，英文在后。
+> 该文档作为我加入谷歌佛教小组（内部员工自发组织的佛教文化社团）执委会的个人声明，阐述了我在佛法方面的经历、方法、观点、修行和愿景。中文在前，英文在后。
 > 
 > This doc serves as my personal statement for joining the Google Buddhist Group (an employee-led cultural Buddhist community) Committee, explaining my experience, approach, views, practices and vision with Buddhism. Chinese version in the front part. English version in the latter part. 
 

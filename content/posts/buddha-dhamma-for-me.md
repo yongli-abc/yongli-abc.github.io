@@ -43,7 +43,7 @@ tags:
     -   我充分知晓《巴利正藏》亦非佛陀在世所撰，而是由其弟子和信众汇编而成。其中一些内容可能直到上座部佛教时代才出现。但它仍然是我们能接触到的，最早也最接近佛陀原始教导的文献。
         -   我非常重视任何佛教文本的成文年代，也包括《巴利正藏》。
             -   《相应尼柯耶》在《巴利正藏》全册中，很可能仍是其中最接近佛陀原始教导的[最根本](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya#Dating)文献。
-        -   我曾幸得机缘与《巴利正藏》的英文翻译者，[菩提比丘](https://en.wikipedia.org/wiki/Bhikkhu_Bodhi)本人交流，他亦确认《相应尼柯耶》是适合作为学习《巴利正藏》的最佳切入点。
+        -   我曾幸得机缘与《巴利正藏》的英文翻译者，尊者[菩提比丘](https://en.wikipedia.org/wiki/Bhikkhu_Bodhi)本人交流，他亦确认《相应尼柯耶》是适合作为学习《巴利正藏》的最佳切入点。
     -   如有可能，我倾向于为任何佛法概念添注巴利原词。
         -   这就是为何我用 “Dhamma” 而非 “Dharma”，“Nibbana” 而非 “Nirvana”，“Sutta” 而非“Sutra”，等等。
             -   我认可 “Dharma”/“Nirvana”/“Sutra” 在流行文化中的广泛使用，故我不介意他人继续使用梵文形式。
@@ -145,7 +145,7 @@ I've been attending [LBC](https://www.londonbuddhistcentre.com/) (London Buddhis
     -   I fully understand that the Pali Canon wasn't written during Buddha's lifetime but compelled by his disciples and followers. Some part of it likely didn't exist until the Theravada period. But still it's the earliest texts we have as close to the Buddha's original teachings as possible.
         -   I pay great attention to the dating of any Buddhist texts, including Pali Canon.
             -   Among all Pali Canon texts, Saṃyutta Nikāya is likely still the [most original](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya#Dating) texts that can be attributed to Buddha's original teachings.
-        -   I was greatly honored to have the opportunity to talk to the English translator of Pali Canon, [Bhikkhu Bodhi](https://en.wikipedia.org/wiki/Bhikkhu_Bodhi) himself, and he confirmed Saṃyutta Nikāya's appropriateness as the very first entry point into learning Pali Canon.
+        -   I was greatly honored to have the opportunity to talk to the English translator of Pali Canon, Venerable [Bhikkhu Bodhi](https://en.wikipedia.org/wiki/Bhikkhu_Bodhi) himself, and he confirmed Saṃyutta Nikāya's appropriateness as the very first entry point into learning Pali Canon.
     -   Whenever possible, I tend to include the Pali word for any Buddhist concepts.
         -   That's why you'll see me write "Dhamma" instead of "Dharma", "Nibbana" instead of "Nirvana", "Sutta" instead of "Sutra", so on and so forth.
             -   I acknowledge the wide use of "Dharma"/"Nirvana"/"Sutra" in popular culture, so I don't mind others continuing the use of the Sanskrit forms.

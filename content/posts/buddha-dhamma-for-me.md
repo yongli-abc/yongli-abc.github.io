@@ -115,6 +115,8 @@ tags:
 
 我相信，带有全教视角的根本佛教，可于觉醒解脱和世俗成就之间，为个人也为集体，取得最佳的平衡。
 
+---
+
 # **Buddha Dhamma for me**
 
 ## My Personal Principles

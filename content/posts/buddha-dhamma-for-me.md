@@ -33,7 +33,7 @@ tags:
 
 随后，我对[《巴利正藏》](https://www.wikiwand.com/zh/%E5%B7%B4%E5%88%A9%E4%B8%89%E8%97%8F)有了更深的兴趣，不仅参加了巴利文学习的短期线上[课程](https://ocbs-courses.org/)，还完整阅读了[《相应尼柯耶》](https://www.wikiwand.com/zh/%E7%9B%B8%E6%87%89%E9%83%A8)，这让我对佛陀的原始教导有了坚实的理解。往后至今，我持续阅读更多《巴利正藏》的[节选](https://www.wikiwand.com/zh/%E6%B3%95%E5%8F%A5%E7%B6%93)和[选集文献](https://www.goodreads.com/book/show/209576.In_the_Buddha_s_Words)，并长期进行冥想打坐。最近，我也开始修持[“四念住”](https://www.wikiwand.com/zh/%E5%9B%9B%E5%BF%B5%E4%BD%8F)，对我的冥想及日常生活中的正念保持，有了极大地促进。
 
-我常前往“伦敦佛教中心”（[LBC](https://www.londonbuddhistcentre.com/), London Buddhist Centre），将其作为我当下依止的僧伽。最近我亦有意于深化与 LBC 背后的佛教僧团——三宝佛团（[Triratna](https://en.wikipedia.org/wiki/Triratna_Buddhist_Community) Buddhist Order）的联系，因其与下文将述的我的佛教方法论，是紧密切合的。
+我常前往“伦敦佛教中心”（[LBC](https://www.londonbuddhistcentre.com/), London Buddhist Centre），也时常参访其他一些僧伽 (Sanghas)。
 
 ## 我的佛教方法
 
@@ -137,7 +137,7 @@ I have had a general interest in religion and spirituality from my early ages (e
 
 I developed a deeper interest in [Pali Canon](https://en.wikipedia.org/wiki/Pali_Canon), so I not only took a [short course](https://ocbs-courses.org/) in actually learning the Pali language but also read the entire [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya), which equipped me with a solid understanding of Buddha's original teachings. I've later started reading more Pali Canon texts in the form of various [excerpts](https://en.wikipedia.org/wiki/Dhammapada) and [anthologies](https://www.goodreads.com/book/show/209576.In_the_Buddha_s_Words). I've been doing meditation on my own time for a long time. Recently I've been following the [Satipaṭṭhāna](https://en.wikipedia.org/wiki/Satipatthana) mindfulness practice, which has largely benefited my meditation as well as my daily mindfulness.
 
-I've been attending [LBC](https://www.londonbuddhistcentre.com/) (London Buddhist Centre) as my main [Sangha](https://en.wikipedia.org/wiki/Sangha#Qualities_of_the_Sangha), as well as consciously deepening my connection recently, with the Buddhist community and order behind LBC, the [Triratna](https://en.wikipedia.org/wiki/Triratna_Buddhist_Community) Buddhist Order, as I see them appropriately align with my Buddhism approach, to be elaborated below.
+I attend [LBC](https://www.londonbuddhistcentre.com/) (London Buddhist Centre) frequently, but also visit other Sanghas sometimes.
 
 ## My Buddhism Approach
 
